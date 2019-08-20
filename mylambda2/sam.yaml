@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Resources:
+  MyFunction:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      AutoPublishAlias: live
+      CodeUri: '.'
+      FunctionName: mylambda2
+      Handler: mylambda2.handler
+      Runtime: python2.7
